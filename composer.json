@@ -6,6 +6,10 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "botman/botman": "^2.6",
+        "botman/driver-telegram": "^1.6",
+        "botman/driver-web": "^1.5",
+        "botman/tinker": "*",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.65",
@@ -13,6 +17,7 @@
         "laravel/tinker": "^2.5"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",

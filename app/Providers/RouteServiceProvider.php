@@ -46,7 +46,19 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
+
+            $this->mapBotManCommands();
         });
+    }
+
+    /**
+     * Defines the BotMan "hears" commands.
+     *
+     * @return void
+     */
+    protected function mapBotManCommands()
+    {
+        require base_path('routes/botman.php');
     }
 
     /**
